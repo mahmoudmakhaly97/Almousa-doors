@@ -4,6 +4,12 @@ body {
     height: 2000px;
 }
 
+@for $i from 1 through 300 {
+    .font-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -354,12 +360,13 @@ a {
     }
 
     .item {
-    @media screen and (max-width: 991px) {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         text-align: center;
-    }
+        @media screen and (max-width: 991px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
         img {
             width: 30%;
         }
@@ -374,7 +381,141 @@ a {
         }
     }
 
-    .owl-nav{
+    .owl-nav {
         display: none;
     }
+}
+
+// start our-news styles
+.our-news {
+    .our-news-content {
+
+        @media screen and (min-width: 1500px) {
+            position: absolute;
+            top: 16%;
+            width: 43%;
+            right: 5%;
+        }
+
+    }
+
+    .title {
+        @media screen and (min-width: 991px) {
+            font-size: 56px;
+            font-weight: lighter
+        }
+
+        @media screen and (min-width: 1500px) {
+            color: #fff;
+        }
+
+    }
+
+    h3 {
+        font-size: 36px;
+        font-weight: 500;
+
+        @media screen and (max-width: 991px) {
+            font-size: 25px;
+        }
+
+        @media screen and (min-width: 1500px) {
+            color: #fff;
+        }
+    }
+
+    span {
+        font-size: 22px;
+    }
+
+    .desc {
+        font-weight: 500;
+
+        @media screen and (min-width: 1500px) {
+            color: #fff;
+        }
+    }
+
+    .explore-btn {
+        padding: 15px 50px;
+        border-radius: 10px;
+    }
+
+    .overlay {
+        img {
+            z-index: -1;
+            transform: rotate(180deg);
+            height: 800px;
+            width: 1000px;
+
+            @media screen and (max-width: 1500px) {
+                display: none;
+            }
+        }
+    }
+
+}
+
+// end our-news styles
+// start footer styles
+
+.footer {
+
+    @media screen and (min-width: 1500px) {
+        padding-top: 240px;
+        background-image: url(../../images/home/footer/footer-bg.png);
+
+    }
+
+    .pages-links {
+        a {
+            color: var(--main-color);
+            font-weight: 500;
+        }
+    }
+
+    .desc {
+        font-weight: 500;
+    }
+
+    .log {
+        width: 150px;
+    }
+
+    .phone {
+        width: 30px;
+    }
+}
+
+//end footer styles
+// start copyrights
+.copyright {
+    ul {
+        li:not(:last-of-type) {
+            position: relative;
+
+            &::after {
+                content: "|";
+                position: absolute;
+                color: #fff;
+                padding: 0 10px;
+
+                @media screen and (max-width: 991px) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
+
+// end copyrights
+.copyright {
+    .copyright-content {
+        @media screen and (max-width: 1200px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
 }
