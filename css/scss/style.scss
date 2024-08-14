@@ -1,7 +1,6 @@
 body {
     font-family: "Noto Sans", sans-serif;
 
-    height: 2000px;
 }
 
 @for $i from 1 through 300 {
@@ -135,6 +134,96 @@ a {
 
     .navbar-nav {
         margin-inline-start: auto;
+
+
+
+        .dropdown-menu {
+            display: none;
+
+
+            top: 90px !important;
+            padding: 0;
+            z-index: 9999;
+            right: 0;
+            width: 200px;
+
+            .dropdown-item {
+                padding: 0.8rem 1rem;
+                color: var(--main-color);
+                transition: .3s all ease;
+
+                &:hover {
+                    color: #fff;
+                    background-color: var(--secondary-color);
+                }
+
+            }
+        }
+
+        .nav-item {
+            position: relative;
+            padding: 1.6rem 0;
+            transition: 1s all ease;
+
+            &:hover {
+                &::after {
+
+                    content: "";
+                    width: 100%;
+                    position: absolute;
+                    width: 70%;
+                    height: 18px;
+                    background-color: var(--secondary-color);
+
+                }
+            }
+
+            &:hover .dropdown-menu {
+                display: block;
+                position: absolute;
+                top: 90px;
+                text-align: start;
+
+            }
+
+            .nav-link {
+                &.active {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 70%;
+                        height: 18px;
+                        background-color: var(--secondary-color);
+                        bottom: 8px;
+                        right: 0;
+                    }
+
+                }
+            }
+        }
+
+        .dropdown-menu {
+            &.show {
+                top: 90px !important;
+                padding: 0;
+                z-index: 9999;
+                right: 0;
+                width: 200px;
+
+                .dropdown-item {
+                    padding: 0.8rem 1rem;
+                    color: var(--main-color);
+                    transition: .3s all ease;
+
+                    &:hover {
+                        color: #fff;
+                        background-color: var(--secondary-color);
+                    }
+                }
+            }
+        }
+
+
     }
 
 
@@ -155,7 +244,7 @@ a {
 
 // end offcanvas styles
 // start banner styles
-.banner {
+.home-banner {
 
     @media (max-width: 768px) {
         max-height: 60vh;
@@ -171,6 +260,9 @@ a {
     }
 
     .overlay {
+        position: absolute;
+        z-index: 99;
+
         .banner-title {
 
             font-weight: lighter;
@@ -457,12 +549,14 @@ a {
 }
 
 // end our-news styles
+
 // start footer styles
 
 .footer {
 
     @media screen and (min-width: 1500px) {
-        padding-top: 240px;
+        padding-top: 300px;
+        padding-bottom: 40px;
         background-image: url(../../images/home/footer/footer-bg.png);
 
     }
@@ -519,3 +613,13 @@ a {
     }
 
 }
+
+// start companies
+.owl-carousel .owl-item img {
+    width: auto !important;
+    max-width: 100% !important;
+}
+
+.owl-nav{
+    display: none;
+} // end companies
