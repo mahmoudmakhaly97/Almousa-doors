@@ -30,7 +30,7 @@ $('.products-carousel').owlCarousel({
             items:2
         },
         1000:{
-            items:4
+            items:6
         }
     }
 })
@@ -73,6 +73,27 @@ $('.companies-carousel').owlCarousel({
         },
         1000:{
             items:6
+        }
+    }
+})
+// shutter window logic 
+
+
+$('.window-carousel').owlCarousel({
+    loop:true,
+  margin: 10,
+        rtl:true,
+
+    responsiveClass:true,
+    responsive:{
+     0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
         }
     }
 })
