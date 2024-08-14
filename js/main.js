@@ -30,6 +30,9 @@ $('.products-carousel').owlCarousel({
             items:2
         },
         1000:{
+            items:4
+      }, 
+        1200:{
             items:6
         }
     }
@@ -97,3 +100,18 @@ $('.window-carousel').owlCarousel({
         }
     }
 })
+// animation on scroll logic
+ AOS.init();
+// scroll animation logic
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500, // Duration in milliseconds (e.g., 1000ms = 1 second)
+    speedAsDuration: true // Ensures that the speed is treated as duration
+});
+var arrowDown = document.getElementById("scroll-down");
+
+arrowDown.addEventListener("click", function () {
+  window.scrollTo({ top:700, behavior: "smooth" });
+});
+
+
+

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/libraries/owl.carousel.min.css">
     <link rel="stylesheet" href="css/libraries/owl.theme.default.min.css">
         <link rel="stylesheet" href="css/libraries/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -100,17 +102,45 @@ AR <i class="fa-solid fa-chevron-down fa-xs"></i>
         <li class="nav-item">
           <a class="nav-link px-0  fw-bold  d-flex text-nowrap" aria-current="page" href="#">HOME <span class="px-4 d-none d-xl-block">.</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-xl-0 fw-bold  d-flex text-nowrap" aria-current="page" href="#">ABOUT US <span class="px-4 d-none d-xl-block">.</span></a>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           ABOUT US <i class="fa-solid fa-caret-down me-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">WINDOWS SHUTTER</a></li>
+            <li><a class="dropdown-item" href="#"> SWING GATE</a></li>
+            <li><a class="dropdown-item" href="#">ROLLUP DOORS</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-xl-0 fw-bold  d-flex text-nowrap" href="#">OUR SERVICES <span class="px-4 d-none d-xl-block">.</span></a>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          OUR SERVICES<i class="fa-solid fa-caret-down me-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">WINDOWS SHUTTER</a></li>
+            <li><a class="dropdown-item" href="#"> SWING GATE</a></li>
+            <li><a class="dropdown-item" href="#">ROLLUP DOORS</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-xl-0 fw-bold  d-flex text-nowrap" href="#">OUR PROJECTS <span class="px-4 d-none d-xl-block">.</span></a>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           OUR PROJECTS <i class="fa-solid fa-caret-down me-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">WINDOWS SHUTTER</a></li>
+            <li><a class="dropdown-item" href="#"> SWING GATE</a></li>
+            <li><a class="dropdown-item" href="#">ROLLUP DOORS</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link px-3 px-xl-0 fw-bold  d-flex text-nowrap" href="#">NEW PROJECTS <span class="px-4 d-none d-xl-block">.</span></a>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          NEW PROJECTS  <i class="fa-solid fa-caret-down me-1"></i>
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                 <li><a class="dropdown-item" href="#">WINDOWS SHUTTER</a></li>
+            <li><a class="dropdown-item" href="#"> SWING GATE</a></li>
+            <li><a class="dropdown-item" href="#">ROLLUP DOORS</a></li>
+          </ul>
         </li>
         <li class="nav-item">
           <a class="nav-link px-3 px-xl-0 fw-bold  d-flex text-nowrap" href="#">OUR CLIENTS</a>
@@ -119,9 +149,9 @@ AR <i class="fa-solid fa-chevron-down fa-xs"></i>
 </div>
 <!-- end offcanvas -->
  <!-- start banner -->
-  <div class="home-banner  position-relative ">
+  <div class="home-banner  position-relative " id="home">
           <!-- start navbar -->
-<nav class="navbar navbar-expand-lg py-3">
+<nav class="navbar navbar-expand-xl py-3">
   <div class="container">
     <a class="navbar-brand" href="#">
       <img src="images/home/navbar/logo.png" class="img-fluid" alt="logo">
@@ -189,16 +219,20 @@ AR <i class="fa-solid fa-chevron-down fa-xs"></i>
 </nav>
 <!-- end navbar -->
  <img src="images/home/banner/banner.png" alt="banner" class="img-fluid banner-img">
- <div class="overlay  text-white position-absolute text-center  top-50 start-50 translate-middle ">
+ <div class="overlay  text-white position-absolute text-center  top-50 start-50 translate-middle "   data-aos="zoom-out-down"  data-aos-easing="linear"
+     data-aos-duration="1500">
 <h1 class="banner-title mb-4">WELCOME TO ALMOOSA DOORS</h1>
 <p class="banner-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
  </div>
 <div class="position-absolute spinner-container end-50 d-flex flex-column gap-1">
-    <i class="fa-solid fa-chevron-up text-white pointer"></i>
+    <a href="#home" class="text-center">
+      <i class="fa-solid fa-chevron-up text-white pointer"></i>
+    </a>
      <div class="spinner position-relative">
      <div class="line position-absolute start-50 translate-middle-x"></div>
      </div>
-         <i class="fa-solid fa-chevron-down text-white pointer"></i>
+     <a href="#our-story" id="scroll-down" class="text-center"  >         <i class="fa-solid fa-chevron-down text-white pointer"></i></a>
+
 
 </div>
 <img src="images/home/banner/right-layer.png" alt="right-layer" class="img-fluid right-layer position-absolute start-0">
@@ -207,8 +241,7 @@ AR <i class="fa-solid fa-chevron-down fa-xs"></i>
   </div>
   <!-- end banner -->
 <!-- start our story  -->
-<div class="our-story text-center">
-    <div class="container">
+<div class="our-story text-center"  >
      <div class="our-story-content m-auto">
            <h2 class="title text-light-green pb-5">OUR STORY</h2>
            <p class="desc text-gray">Our story began with the first door in the early 1980s when we wanted to change the gate of our house to a smart gate that opens with a remote control. However, we couldn’t find a company that offered such a gate in Saudi Arabia. This is where the idea came from. </p>
@@ -530,6 +563,9 @@ AR <i class="fa-solid fa-chevron-down fa-xs"></i>
     <script src="js/libraries/bootstrap.bundle.min.js"></script>
     <script src="js/libraries/jquery-3.7.1.min.js"></script>
     <script src="js/libraries/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.polyfills.min.js"></script>
+
     <script src="js/main.js"></script>
 </body>
 </html>
