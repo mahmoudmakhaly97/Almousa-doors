@@ -615,11 +615,15 @@ a {
 }
 
 // start companies
-.owl-carousel .owl-item img {
-    width: auto !important;
-    max-width: 100% !important;
+.companies {
+    .owl-carousel .owl-item img {
+        width: auto !important;
+        max-width: 100% !important;
+    }
+
+    .owl-nav {
+        display: none;
+    }
 }
 
-.owl-nav{
-    display: none;
-} // end companies
+// end companies

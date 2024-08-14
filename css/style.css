@@ -1661,12 +1661,11 @@ a {
   }
 }
 
-.owl-carousel .owl-item img {
+.companies .owl-carousel .owl-item img {
   width: auto !important;
   max-width: 100% !important;
 }
-
-.owl-nav {
+.companies .owl-nav {
   display: none;
 }
 
