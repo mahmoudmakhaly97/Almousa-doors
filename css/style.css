@@ -1261,7 +1261,7 @@ a {
 
 @media (max-width: 991px) {
   .top-bar ul.nav-links:last-child li {
-    font-size: 12px;
+    font-size: 13px;
     text-wrap: nowrap;
   }
 }
@@ -1334,7 +1334,8 @@ a {
   top: 90px;
   text-align: start;
 }
-.navbar .navbar-nav .nav-item .nav-link.active::after {
+.navbar .navbar-nav .nav-item .nav-link.active::after,
+.navbar .navbar-nav .nav-item .active-link.active::after {
   content: "";
   position: absolute;
   width: 70%;
@@ -1431,7 +1432,7 @@ a {
   }
 }
 .home-banner .overlay .banner-desc {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
 }
 @media (max-width: 991px) {
@@ -1870,6 +1871,19 @@ a {
 .products-offers .tab-content .tab-btns .download:hover {
   background-color: var(--main-color);
   color: var(--secondary-color);
+}
+
+.active-link {
+  position: relative;
+}
+.active-link:after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  width: 70%;
+  height: 18px;
+  top: 40px;
+  background-color: var(--secondary-color);
 }
 
 /*# sourceMappingURL=style.css.map */

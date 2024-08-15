@@ -113,5 +113,14 @@ arrowDown.addEventListener("click", function () {
   window.scrollTo({ top:700, behavior: "smooth" });
 });
 
+// active link in navbar
+document.querySelectorAll('.dropdown-item').forEach(function(dropdownItem) {
+    dropdownItem.addEventListener('click', function(event) {
+         document.querySelectorAll('.nav-link').forEach(function(navLink) {
+            navLink.classList.remove('active-link');
+        });
 
-
+         const parentNavLink = event.target.closest('.dropdown').querySelector('.nav-link');
+        parentNavLink.classList.add('active-link');
+    });
+});

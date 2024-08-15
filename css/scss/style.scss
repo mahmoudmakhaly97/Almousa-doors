@@ -73,7 +73,7 @@ a {
         &:last-child {
             li {
                 @media (max-width: 991px) {
-                    font-size: 12px;
+                    font-size: 13px;
                     text-wrap: nowrap;
                 }
             }
@@ -186,7 +186,8 @@ a {
 
             }
 
-            .nav-link {
+            .nav-link,
+            .active-link {
                 &.active {
                     &::after {
                         content: "";
@@ -270,7 +271,7 @@ a {
             transform: translate3d(0.359375px, 10px, 0px) !important;
             width: 22rem;
             padding: 0;
-            background-color:   var(--secondary-color);
+            background-color: var(--secondary-color);
 
             .dropdown-item {
                 text-align: right;
@@ -325,7 +326,7 @@ a {
         }
 
         .banner-desc {
-            font-size: 30px;
+            font-size: 25px;
             font-weight: 400;
 
             @media (max-width: 991px) {
@@ -886,3 +887,16 @@ a {
 
 
 // end our products offers styles
+.active-link {
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        width: 70%;
+        height: 18px;
+        top: 40px;
+        background-color: var(--secondary-color);
+    }
+}
