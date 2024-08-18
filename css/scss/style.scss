@@ -263,7 +263,16 @@ a {
 
     }
 
+    &.nav-bg-white-color {
+        background-color: #fff !important;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
+        .navbar-nav {
+            .nav-link {
+                color: var(--main-color) !important;
+            }
+        }
+    }
 }
 
 // end navbar styles
@@ -284,6 +293,11 @@ a {
 
                 &:hover {
                     color: var(--secondary-color);
+                }
+
+                svg:not(:host).svg-inline--fa,
+                svg:not(:root).svg-inline--fa {
+                    font-size: 15px;
                 }
             }
 
@@ -342,14 +356,14 @@ a {
         .banner-title {
 
             font-weight: lighter;
-            font-size: 58px;
+            font-size: 55px;
 
             @media (max-width: 991px) {
                 font-size: 30px;
             }
 
             @media (max-width:576px) {
-                font-size: 23px;
+                font-size: 21px;
             }
         }
 
@@ -424,7 +438,7 @@ a {
     }
 
     .right-layer {
-        top: 70%;
+        top: 76%;
         transform: rotate(180deg);
 
         @media screen and (max-width: 1600px) {
@@ -456,7 +470,7 @@ a {
         .title {
             @media (min-width: 991px) {
                 font-size: 56px;
-                font-weight: lighter;
+                font-weight: 200;
             }
         }
 
@@ -480,7 +494,7 @@ a {
 
             @media screen and (min-width: 991px) {
                 font-size: 56px;
-                font-weight: lighter;
+                font-weight: 200;
 
             }
         }
@@ -500,6 +514,7 @@ a {
         padding: 15px 50px;
         font-size: 18px;
         border-radius: 10px;
+        letter-spacing: 4px;
     }
 
     .offers-layer {
@@ -532,7 +547,7 @@ a {
     .title {
         @media screen and (min-width: 991px) {
             font-size: 56px;
-            font-weight: lighter;
+            font-weight: 200;
 
         }
     }
@@ -617,6 +632,8 @@ a {
     .explore-btn {
         padding: 15px 50px;
         border-radius: 10px;
+        letter-spacing: 4px;
+        margin: 10px 0;
     }
 
     .overlay {
@@ -749,7 +766,7 @@ a {
         .title {
             @media screen and (min-width: 1200px) {
                 font-size: 56px;
-                font-weight: lighter;
+                font-weight: 200;
             }
         }
 

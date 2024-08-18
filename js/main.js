@@ -1,26 +1,25 @@
 // navbar sticky logic
 window.addEventListener("scroll", function () {
+       let logo = document.getElementById("logo");
+    let bars = document.getElementById("bars");
   var navbar = document.querySelector(".navbar");
   if (window.scrollY >= 58) {
       navbar.classList.add("fixed-top");
-    //    navbar.style.background = "#003ea5";
+      //    navbar.style.background = "#003ea5";
+              logo.src = "../images/home/navbar/colored-logo.png";
+        bars.classList.remove("text-white");
+      navbar.classList.add("nav-bg-white-color");
 
   
   } else {
     navbar.classList.remove("fixed-top");
       navbar.style.background = "transparent";
+      navbar.classList.remove("nav-bg-white-color");
+              logo.src = "../images/home/navbar/logo.png";
+          bars.classList.add("text-white");
   }
 });
-// change logo image when scroll 
-window.addEventListener("scroll", function () {
-    let logo = document.getElementById("logo");
-    if(this.window.scrollY >= 58) {
-        logo.src = "../images/home/navbar/colored-logo.png";
-    } else {
-        logo.src = "../images/home/navbar/logo.png";
-
-    }
-})
+ 
 // start our products logic
 $('.products-carousel').owlCarousel({
    loop:true,

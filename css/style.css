@@ -1388,6 +1388,13 @@ a {
   color: #fff;
   background-color: var(--secondary-color);
 }
+.navbar.nav-bg-white-color {
+  background-color: #fff !important;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.navbar.nav-bg-white-color .navbar-nav .nav-link {
+  color: var(--main-color) !important;
+}
 
 .offcanvas .offcanvas-items {
   display: flex;
@@ -1402,6 +1409,10 @@ a {
 }
 .offcanvas .offcanvas-items .nav-item .nav-link:hover {
   color: var(--secondary-color);
+}
+.offcanvas .offcanvas-items .nav-item .nav-link svg:not(:host).svg-inline--fa,
+.offcanvas .offcanvas-items .nav-item .nav-link svg:not(:root).svg-inline--fa {
+  font-size: 15px;
 }
 .offcanvas .offcanvas-items .nav-item .dropdown-toggle:after {
   display: none;
@@ -1444,7 +1455,7 @@ a {
 }
 .home-banner .overlay .banner-title {
   font-weight: lighter;
-  font-size: 58px;
+  font-size: 55px;
 }
 @media (max-width: 991px) {
   .home-banner .overlay .banner-title {
@@ -1453,7 +1464,7 @@ a {
 }
 @media (max-width: 576px) {
   .home-banner .overlay .banner-title {
-    font-size: 23px;
+    font-size: 21px;
   }
 }
 .home-banner .overlay .banner-desc {
@@ -1515,7 +1526,7 @@ a {
   }
 }
 .home-banner .right-layer {
-  top: 70%;
+  top: 76%;
   transform: rotate(180deg);
 }
 @media screen and (max-width: 1600px) {
@@ -1545,7 +1556,7 @@ a {
 @media (min-width: 991px) {
   .our-story .our-story-content .title {
     font-size: 56px;
-    font-weight: lighter;
+    font-weight: 200;
   }
 }
 .our-story .our-story-content .desc {
@@ -1561,7 +1572,7 @@ a {
 @media screen and (min-width: 991px) {
   .offers .offers-content .title {
     font-size: 56px;
-    font-weight: lighter;
+    font-weight: 200;
   }
 }
 .offers .offers-content .desc {
@@ -1577,6 +1588,7 @@ a {
   padding: 15px 50px;
   font-size: 18px;
   border-radius: 10px;
+  letter-spacing: 4px;
 }
 .offers .offers-layer {
   position: absolute !important;
@@ -1603,7 +1615,7 @@ a {
 @media screen and (min-width: 991px) {
   .our-products .title {
     font-size: 56px;
-    font-weight: lighter;
+    font-weight: 200;
   }
 }
 @media screen and (max-width: 991px) {
@@ -1675,6 +1687,8 @@ a {
 .our-news .explore-btn {
   padding: 15px 50px;
   border-radius: 10px;
+  letter-spacing: 4px;
+  margin: 10px 0;
 }
 .our-news .overlay img {
   z-index: -1;
@@ -1688,7 +1702,7 @@ a {
   }
 }
 .our-news .digital img {
-  max-width: 85%;
+  max-width: 80%;
 }
 
 @media screen and (min-width: 1500px) {
@@ -1761,7 +1775,7 @@ a {
 @media screen and (min-width: 1200px) {
   .window-shutter .window-content .title {
     font-size: 56px;
-    font-weight: lighter;
+    font-weight: 200;
   }
 }
 .window-shutter .window-content .desc {
