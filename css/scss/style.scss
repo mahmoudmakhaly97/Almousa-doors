@@ -714,6 +714,26 @@ a {
             height: 800px;
             width: 1000px;
 
+            @media screen and (min-width: 1950px) {
+                width: 1170px;
+            }
+
+            @media screen and (min-width: 2250px) {
+                width: 1220px;
+            }
+
+            @media screen and (min-width: 2350px) {
+                width: 1320px;
+            }
+
+            @media screen and (min-width: 2450px) {
+                width: 1420px;
+            }
+
+            @media screen and (min-width: 2550px) {
+                width: 1520px;
+            }
+
             @media screen and (max-width: 1500px) {
                 display: none;
             }
@@ -723,6 +743,10 @@ a {
     .digital {
         img {
             max-width: 80%;
+
+            @media screen and (min-width: 1950px) {
+                max-width: 85%;
+            }
         }
     }
 }
