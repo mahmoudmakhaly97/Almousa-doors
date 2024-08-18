@@ -3,7 +3,7 @@ window.addEventListener("scroll", function () {
   var navbar = document.querySelector(".navbar");
   if (window.scrollY >= 58) {
       navbar.classList.add("fixed-top");
-       navbar.style.background = "#003ea5";
+    //    navbar.style.background = "#003ea5";
 
   
   } else {
@@ -11,6 +11,16 @@ window.addEventListener("scroll", function () {
       navbar.style.background = "transparent";
   }
 });
+// change logo image when scroll 
+window.addEventListener("scroll", function () {
+    let logo = document.getElementById("logo");
+    if(this.window.scrollY >= 58) {
+        logo.src = "../images/home/navbar/colored-logo.png";
+    } else {
+        logo.src = "../images/home/navbar/logo.png";
+
+    }
+})
 // start our products logic
 $('.products-carousel').owlCarousel({
    loop:true,
